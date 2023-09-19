@@ -1,0 +1,14 @@
+let x = 1;
+let y = 2;
+
+watch added = {
+    x + y
+};
+
+// 3
+print(added);
+
+x = 100;
+
+// 102
+print(added);

@@ -1,0 +1,1 @@
+./target/release/Ankara ./sample_code/$1.ank

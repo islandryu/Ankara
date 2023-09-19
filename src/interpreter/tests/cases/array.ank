@@ -1,0 +1,29 @@
+let array = [1, 2, 3];
+
+for(i in array) {
+    print(i);
+};
+
+print("");
+
+let obj = [bar: 1, baz: 2];
+ 
+// 1
+print(obj["bar"]);
+// 2
+print(obj["baz"]);
+
+print("");
+
+for(i in obj) {
+    // 1, 2
+    print(i);
+};
+
+print("");
+let objAndArray = [1, bar: 1, baz: 2];
+
+for(i in objAndArray) {
+    // 1, 1, 2
+    print(i);
+};

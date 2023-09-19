@@ -1,0 +1,17 @@
+let add = fn (a, b) {
+  a + b
+};
+
+print(add(5,5));
+
+let multiple = fn (a) {
+    for(val in a) {
+        val * 2
+    }
+};
+
+print(multiple([1, 2, 3]));
+
+let precedence = 1 + 2 * 3 + (4 + 5) / 3 - 10;
+
+print(precedence)

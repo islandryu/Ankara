@@ -1,0 +1,10 @@
+add: function 
+multiple: function 
+precedence: 0 
+print: builtin function 
+{
+}
+
+{
+}
+

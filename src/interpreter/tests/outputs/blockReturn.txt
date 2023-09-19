@@ -1,0 +1,16 @@
+func1: function 
+func1Return: 2 
+func2: function 
+func2Return: i == 3 
+func3: function 
+func3Return: a 
+print: builtin function 
+{
+}
+
+{
+}
+
+{
+}
+

@@ -1,0 +1,42 @@
+let func1 = fn () {
+    let val = {
+        1 + 1
+    };
+    return val;
+};
+
+let func1Return = func1();
+print(func1Return);
+
+let func2 = fn() {
+    let array = [1, 2, 3, 4, 5];
+
+    // val = "i == 3"
+    let val = for(i in array) {
+        if(i == 3) {
+            // block-level-return
+            "i == 3"
+        }
+    };
+    let val2 = for(i in array) {
+        if(i == 3) {
+            return val;
+        }
+    };
+};
+
+let func2Return = func2();
+print(func2Return);
+
+let func3 = fn() {
+    {
+        {
+            "a"
+        }
+    }
+} ;
+
+let func3Return = func3();
+
+// "a"
+print(func3Return);

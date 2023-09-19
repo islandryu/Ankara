@@ -1,0 +1,27 @@
+let func1 = fn () {
+    let val = {
+        1 + 1
+    };
+    return val;
+};
+
+print(func1());
+
+let func2 = fn() {
+    let array = [1, 2, 3, 4, 5];
+
+    // val = "i == 3"
+    let val = for(i in array) {
+        if(i == 3) {
+            // block-level-return
+            "i == 3"
+        }
+    };
+    let val2 = for(i in array) {
+        if(i == 3) {
+            return val;
+        }
+    };
+};
+
+print(func2());

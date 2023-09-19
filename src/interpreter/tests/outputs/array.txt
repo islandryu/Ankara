@@ -1,0 +1,28 @@
+array: [1,2,3,] 
+obj: [bar:1,baz:2,] 
+objAndArray: [1,bar:1,baz:2,] 
+print: builtin function 
+{
+}
+
+{
+}
+
+{
+}
+
+{
+}
+
+{
+}
+
+{
+}
+
+{
+}
+
+{
+}
+

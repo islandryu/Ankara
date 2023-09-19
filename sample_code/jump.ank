@@ -1,0 +1,25 @@
+let my = switch("apple") {
+    case "lemon": {"my lemon"}
+    case "melon": {"my melon"}
+    default: {"my apple"}
+};
+
+print(my);
+
+let your = switch("melon") {
+    case "lemon": {"your lemon"}
+    case "melon": {"your melon"}
+    default: {"your apple"}
+};
+
+print(your);
+
+let value = (1 + 0) * 0;
+
+let color = if(value) {
+    "red"
+} else {
+    "blue"
+};
+
+print(color);
