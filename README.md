@@ -47,6 +47,7 @@ Manipulate both arrays and objects using a consistent and unified syntax.
 let array = [1, 2, 3];
 
 for(i in array) {
+　　// 1 2 3
     print(i);
 };
 ```
@@ -56,7 +57,9 @@ for(i in array) {
 ```ankara
 let obj = [bar: 1, baz: 2];
 
+// 1
 print(obj["bar"]);
+// 2
 print(obj["baz"]);
 ```
 
@@ -66,12 +69,18 @@ print(obj["baz"]);
 let objAndArray = [1, bar: 1, baz: 2];
 
 for(i in objAndArray) {
+    // 1 1 2
     print(i);
 };
+
+// 1
+print(obj["bar"]);
+// 2
+print(obj["baz"]);
 ```
 
 ### Block-Level Return
-
+If there is no semicolon at the end of the line, the value is returned at block level as block level return
 ```ankara
 let func1 = fn () {
     let val = {
@@ -79,6 +88,9 @@ let func1 = fn () {
     };
     return val;
 };
+
+// 2
+print(func1());
 ```
 
 ### Watch Variables
@@ -91,11 +103,12 @@ watch added = {
     x + y
 };
 
-//
+// 3
 print(added);
 
 x = 100;
 
+// 102
 print(added);
 ```
 
