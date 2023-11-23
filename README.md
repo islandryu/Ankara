@@ -20,10 +20,31 @@ or
 
 Download from [release](https://github.com/islandryu/Ankara/releases/tag/v0.0.1)
 
-example window
+example windows
 1. Download and unzip from https://github.com/islandryu/Ankara/releases/download/v0.0.1/Ankara_v0.0.1_x86_64-pc-windows-gnu.zip
 2. Unzip Ankara_v0.0.1_x86_64-pc-windows-gnu.zip
 3. Run command like `Ankara.exe sample.ank`
+
+```
+// sample.ank
+let add = fn (a, b) {
+  a + b
+};
+
+print(add(5,5));
+
+let multiple = fn (a) {
+    for(val in a) {
+        val * 2
+    }
+};
+
+print(multiple([1, 2, 3]));
+
+let precedence = 1 + 2 * 3 + (4 + 5) / 3 - 10;
+
+print(precedence)
+```
 
 ## Features
 
