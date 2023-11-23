@@ -34,6 +34,8 @@ let add = fn (a, b) {
 print(add(5,5));
 
 let multiple = fn (a) {
+　　// This expression has no semi-colon, so the block level return is applied after evaluation.
+　　// In other words, this "for expression" returns the value of the first array of a multiplied by two.
     for(val in a) {
         val * 2
     }
